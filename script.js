@@ -35,6 +35,16 @@ window.onload = () =>{
         document.querySelector('.header .header-2').classList.remove('active');        
     }
 
+    fadeOut();
+
+}
+
+function loader(){
+    document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut(){
+    setTimeout(loader, 4000);
 }
 
 var swiper = new Swiper(".books-slider", {
@@ -85,4 +95,74 @@ var swiper = new Swiper(".books-slider", {
       
     },
   });
+
+  var swiper = new Swiper(".arrivals-slider", {
+    spaceBetween:10,
+    loop:true,
+    centerslides: true,
+    autoplay:{
+        delay:9500,
+        disableOnInteraction:false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      
+    },
+  });
+
+  var swiper = new Swiper(".reviews-slider", {
+    spaceBetween:10,
+    grabCursor:true,
+    loop:true,
+    centerslides: true,
+    autoplay:{
+        delay:9500,
+        disableOnInteraction:false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      
+    },
+  });
+
+  var swiper = new Swiper(".blogs-slider", {
+    spaceBetween:10,
+    grabCursor:true,
+    loop:true,
+    centerslides: true,
+    autoplay:{
+        delay:9500,
+        disableOnInteraction:false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      
+    },
+  });
+
+
 
