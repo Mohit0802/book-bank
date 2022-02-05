@@ -293,6 +293,7 @@ section{
     flex:1 1 42rem;
     text-align: center;
     margin-top: 2rem;
+    width: 100%;
 }
 
  .home .row .books-slider a img{
@@ -302,7 +303,9 @@ section{
 .home .row .books-slider a:hover img{
    transform: scale(.9);
 }
-
+.stand {
+    width: 100%;
+}
 
 
 
